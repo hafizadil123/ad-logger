@@ -1,0 +1,17 @@
+{
+  "name": "ad-logger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "browserify src/index.js -o dist/ad-bundle.js",
+    "minify": "terser dist/ad-bundle.js -o dist/ad-bundle.min.js",
+    "build": "npm run bundle && npm run minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  }
+}
